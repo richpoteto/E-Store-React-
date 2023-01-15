@@ -32,7 +32,7 @@ function App() {
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
 
-      <main className="app">
+      <div className="app">{/*main, modify*/}
         <Switch>
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/product/:id" component={ProductScreen} />
@@ -40,7 +40,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/signin" component={SignIn} />
         </Switch>
-      </main>
+      </div>
     </Router>
   )
 }
